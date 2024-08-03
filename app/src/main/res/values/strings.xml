@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Example7.9</string>
+    <string name="channel_name">Official Notification Channel.</string>
+    <string name="channel_description">This is default notification channel of application.</string>
+    <string name="text_permission_denied">Post notification permission was denied.</string>
+    <string name="text_post_notification">Post Notification</string>
+    <string name="notification_title">My Notification</string>
+    <string name="notification_content">This is my cute cat!</string>
+    <string name="text_detail">DETAIL</string>
+    <string name="text_share">SHARE</string>
+    <string name="long_text">You can manage a user’s business data and applications through a work profile. A work profile is a managed corporate profile associated with the primary user account on an Android device. A work profile securely isolates work apps and data from personal apps and data. This work profile is in a separate container from the personal profile, which your user controls. These separate profiles allow organizations to manage the business data they care about, but leave everything else on a user’s device under the user’s control. For a deep dive into best practices, see the Work profiles guide. For an overview of those best practices, see below.</string>
+    <string name="text_reply">REPLY</string>
+    <string name="text_archive">ARCHIVE</string>
+    <string name="summary_text1">The first day of a week is Monday</string>
+    <string name="summary_text2">The first month of a year is January</string>
+    <string name="summary_text3">The first season of a year is Spring</string>
+    <string name="summary_text4">The first kiss of a child is from it\'s parents</string>
+</resources>
