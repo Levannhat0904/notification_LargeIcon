@@ -81,3 +81,33 @@ Code mẫu:
 kết quả 
 <img width="455" alt="image" src="https://github.com/user-attachments/assets/4fd21189-5a4f-4f47-abcb-6fad7220efb8">
 
+Để hiển thị một đoạn văn bản dài khi mở rộng thông báo, ta thiết lập giá trị NotificationCompat.BigTextStyle trong phương thức setStyle():
+// kotlin:
+        var notification = NotificationCompat.Builder(context, CHANNEL_ID)
+                .setSmallIcon(R.drawable.new_mail)
+                .setContentTitle(emailObject.getSenderName())
+                .setContentText(emailObject.getSubject())
+                .setLargeIcon(emailObject.getSenderAvatar())
+                .setStyle(NotificationCompat.BigTextStyle()
+                        .bigText(emailObject.getSubjectAndSnippet()))
+                .build()
+Ví dụ trong video:
+// kotlin:
+        private fun createNotification() {
+            val larIcon = BitmapFactory.decodeResource(resources, R.drawable.ic_studio)
+            notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_notification)
+                .setLargeIcon(larIcon)
+                .setContentTitle(getString(R.string.notification_title))
+                .setStyle(
+                    NotificationCompat.BigTextStyle()
+                        .bigText(getString(R.string.long_text))
+                )
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setAutoCancel(false)
+                .addAction(R.drawable.ic_notification, getString(R.string.text_reply), null)
+                .addAction(R.drawable.ic_notification, getString(R.string.text_archive), null)
+        }
+Kết quả:
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/0e863287-56f2-441a-b243-d301846c0606">
+
