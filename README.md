@@ -42,8 +42,12 @@ Nếu ta muốn ảnh xuất hiện như biểu tượng nhỏ khi notification 
         
 Kết quả minh họa khi notification được thu gọn và mở rộng:
 
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/3d3abc02-9836-4dbc-9778-841d8c4ba12d">
+
 
 Code mẫu:
+
+
 
 // kotlin:
 
@@ -73,3 +77,7 @@ Code mẫu:
             notify(notificationId++, notificationBuilder.build())
         }
     }
+
+kết quả 
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/4fd21189-5a4f-4f47-abcb-6fad7220efb8">
+
